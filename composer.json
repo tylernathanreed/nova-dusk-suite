@@ -12,7 +12,7 @@
         "algolia/algoliasearch-client-php": "^2.2",
         "fideloper/proxy": "^4.0",
         "laravel/framework": "5.7.*",
-        "laravel/nova": "*",
+        "laravel/nova": "dev-1363-action-redirect-new-tab",
         "laravel/scout": "^7.0",
         "laravel/tinker": "^1.0",
         "otwell/custom-field": "*",
@@ -20,6 +20,7 @@
         "otwell/sidebar-tool": "*"
     },
     "require-dev": {
+        "beyondcode/laravel-dump-server": "^1.2",
         "codedungeon/phpunit-result-printer": "^0.19.10",
         "filp/whoops": "^2.0",
         "fzaninotto/faker": "^1.4",
@@ -62,8 +63,12 @@
     },
     "repositories": [
         {
-            "type": "path",
-            "url": "./../nova-lib"
+            "type": "vcs",
+            "url": "https://github.com/tylernathanreed/nova"
+        },
+        {
+            "type": "composer",
+            "url": "https://nova.laravel.com"
         },
         {
             "type": "path",
